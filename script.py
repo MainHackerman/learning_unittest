@@ -1,8 +1,4 @@
 def fibo(n):
-    """
-    >>> [fibo(n) for n in range(1,7)]
-    [1, 1, 2, 3, 5, 8]
-    """
     if n == 0 or n == 1:
         return n
     else:
@@ -10,12 +6,4 @@ def fibo(n):
 
 
 def username(email):
-    """
-    >>> username('hovno@gmail.com')
-    'hovno'
-    """
     return email.split('@')[0]
-
-import doctest
-
-doctest.testmod()
